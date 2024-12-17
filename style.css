@@ -1,0 +1,667 @@
+* {
+    box-sizing: none;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+.main {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.proPic {
+    width: 160px;
+    height: 236px;
+    border-radius: 50%;
+    margin: 5% 5%;
+}
+
+.sidebar .proFile {
+    text-align: center;
+    background-color: black
+}
+
+.main .sidebar {
+    width: 260px;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 0;
+    top: 0;
+    justify-content: space-between;
+    margin: 0;
+    position: fixed;
+    z-index: 999;
+}
+
+.content {
+    position: relative;
+    left: 260px;
+    width: calc(100% - 260px);
+
+
+}
+.page-content{
+    border-bottom: 2px solid #f3f3f3f3;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.page-content:last-child{
+    border-bottom: none;
+}
+.proFile h2 {
+    color: white;
+    margin: 5% 5%;
+
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding: 15px;
+    transition: all .3s;
+}
+
+nav :hover {
+    color: #26b93a;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    height: 5%;
+}
+
+.icon {
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    border-radius: 100%;
+    margin: 0 10px;
+}
+
+
+
+
+.jsPage {
+    min-height: 100vh;
+}
+
+.aboutPage {
+    min-height: 100vh;
+}
+
+
+
+.active {
+    color: #20c997;
+}
+
+.mobile-nav {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.mobile-nav label {
+    font-size: 28px;
+    color: #fff;
+    display: none;
+    cursor: pointer;
+}
+
+#toggle {
+    display: none;
+}
+
+#close {
+    display: none;
+    position: absolute;
+    top: 2px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#close span {
+    width: 3px;
+    height: 24px;
+    background-color: transparent;
+    position: absolute;
+    margin-top: 30px;
+}
+
+#close span:nth-child(1) {
+    left: 12px;
+    top: -14px;
+    transform: rotate(45deg);
+}
+
+#close span:nth-child(2) {
+    right: 14px;
+    top: -14px;
+    transform: rotate(-45deg);
+}
+
+/*Animation for sidebar disappear and top bar appear */
+@media screen and (max-width: 900px) {
+    .main .sidebar {
+        width: 100%;
+        height: 66px;
+        top: 0;
+        background-color: black;
+        flex-direction: row;
+        max-width: 100vw;
+ 
+
+    }
+    .main h2{
+        padding: 10px;
+    }
+    .main .content {
+        width: 100%;
+        left: 0;
+        top: -136px;
+        padding-top: 136px;
+        background-color: white;
+
+    }
+    .homePage{
+        padding-top: 66px;;
+    }
+    .page-content {
+        position: relative;
+
+        width: 100%;
+        border-bottom: 2px solid #f3f3f3f3;
+    }
+
+    .proPic {
+        display: none;
+    }
+
+    .sidebar .proFile {
+        background-color: transparent;
+    }
+
+    .proFile h2 {
+        margin: 0;
+    }
+
+    .mobile-nav {
+        display:block;
+    }
+
+    .icons {
+        background-color: transparent;
+        height: auto;
+        width: auto;
+        padding-right: 50px;
+    }
+
+    .icon {
+        width: 20px;
+        height: 20px;
+        margin: 0 5px;
+    }
+
+    #menu {
+        position: fixed;
+        top: 66px;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        z-index: 999;
+        display: none;
+    }
+
+    #menu li {
+        border-bottom: 1px solid #ccc;
+    }
+
+    .mobile-nav label {
+        display: block;
+    }
+
+    #close span {
+        background-color: #fff;
+    }
+}
+
+
+
+
+
+
+/*Home page setting*/
+.main .content .homePage {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main .content .homePage::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('image/background2.jpg');
+    background-size: cover;
+    background-position: initial;
+    background-repeat: no-repeat;
+    filter: brightness(50%);
+    z-index: 1;
+}
+
+#introduce-myself {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 5vh;
+    color: white;
+    font-weight: bold;
+    z-index: 2;
+    position: relative;
+    padding: 30vh 10vw 10vh 10vw;
+    margin: 20% 0 0 0;
+}
+
+/*For all Cheat Sheet table*/
+.table-container {
+    max-height: 50vh;
+    overflow-y: scroll;
+
+}
+
+.table-container .cheatsheetTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size:0.9em;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+
+
+
+
+}
+
+.table-container .cheatsheetTable th,
+.table-container .cheatsheetTable td {
+
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.table-container .cheatsheetTable th {
+    background-color:#54B689;
+    font-size: 30px;
+    border-bottom: 2px solid black;
+}
+
+.table-container .cheatsheetTable tr:nth-child(even) {
+    background-color: #f9f9f9;
+
+}
+.table-container .cheatsheetTable tbody tr{
+    border-bottom: 1px solid #dddddd;
+
+}
+.table-container .cheatsheetTable tbody tr:last-of-type{
+    border-bottom: 2px solid #54B689;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 50px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+/*Html page setting*/
+.htmlPage {
+    min-height: 100vh;
+
+
+}
+
+/*Generator section*/
+.tool-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    width: 100%;
+}
+
+.tool {
+    width: 350px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.tool h2 {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.tool label {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.tool input {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.tool button {
+    width: 100%;
+    background-color: #54B689;
+    color: #fff;
+    padding: 8px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.tool button:hover {
+    background-color: #218838;
+}
+
+.output-container {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #e8f4ff;
+    border: 1px solid #b3d8ff;
+    font-size: 14px;
+    word-break: break-all;
+    white-space: pre-wrap;
+    display: none;
+    position: relative;
+    overflow-x: auto;
+    max-width: 100%;
+    ;
+}
+
+.copy-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.copy-btn:hover {
+    background-color: #0056b3;
+}
+
+/*CSS page section*/
+.cssPage {
+    min-height: 100vh;
+}
+
+/*CSS cheat sheet image container*/
+.cssImage-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px;
+    max-width: 100vw;
+    align-content: center;
+
+}
+
+.cssImage img {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+}
+
+.cssImage {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    max-width: 300px;
+
+}
+
+
+
+/*JaveScript cheat sheet image container*/
+.jsImage-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px;
+    max-width: 100vw;
+    align-content: center;
+
+
+}
+
+.jsImage img {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+}
+
+.jsImage {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    max-width: 300px;
+
+}
+
+
+    /* Resume Contact section*/
+.resume-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.resumePage h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-decoration: underline;
+}
+    /*Skills section*/
+.introInfo-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.content .resumePage {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.introInfo-container .introduce-myself2{
+    width: 100%;
+}
+
+.contact-info {
+    flex: 1;
+    width: 100%;
+}
+
+.contact-info .infoTable{
+    justify-content: center;
+    display: flex;
+    border-collapse: collapse;
+    margin: 10px;
+
+    
+}
+.contact-info .infoTable td{
+    border-bottom: 2px solid #f3f3f3f3;
+    padding: 10px 10px;
+}
+
+.contact-info h2{
+    text-decoration: underline;
+    font-size: 2.5rem;
+}
+
+
+.resumePage .introduce-myself2 h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-decoration: underline;
+
+}
+
+.resumePage #learnTitle {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #555;
+
+}
+
+.resumePage .skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+}
+
+.resumePage .skill-item {
+    background: #f9f9f9;
+    padding: 2vw;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    font-size: 10vw;
+    max-width: 300px;
+
+}
+.resumePage .skill-item img {
+    width: 100%;
+    height: auto;
+}
+.resumePage .skill-item:hover {
+    transform: translateY(-10px);
+}
+
+
+.resumePage .skill-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #333;
+    width: 100%;
+    overflow: auto;
+}
+
+.resumePage .skill-item p {
+    font-size: 0.9rem;
+    color: #666;
+    width: 100%;
+}
+
+.resumePage img{
+    max-width: 210px;
+    max-height: 284px;
+}
+
+
+
+
+    /*Resume contact form*/
+.contact-form {
+    flex: 2;
+    min-width: 300px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin: 0.5rem 0 0.2rem;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    padding: 0.8rem;
+    background-color: #54B689;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #54B689;
+}
+
+.contact-form h3{
+    text-decoration: underline;
+}

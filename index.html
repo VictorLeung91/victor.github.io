@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor's page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+</head>
+
+
+<body>
+    <div class="main">
+
+        <!--Side bar section-->
+        <div class="sidebar">
+            <div class="proFile">
+                <img src="image/pro-icon.jpg" alt="My profile picture" class="proPic">
+                <h2>Victor Leung</h2>
+            </div>
+
+            <!--menu list-->
+            <nav>
+                <ul id="menu">
+                    <li><a href="#homePage">Home</a></li>
+                    <li><a href="#htmlPage">HTML Cheat Sheet</a></li>
+                    <li><a href="#cssPage">CSS Cheat Sheet</a></li>
+                    <li><a href="#jsPage">JavaScript Cheat Sheet</a></li>
+                    <li><a href="#resumePage">Resume</a></li>
+                </ul>
+            </nav>
+
+
+            <!--for social icons-->
+            <div class="icons">
+                <a href="https://www.facebook.com/victor.leung.75457"><img src="image/facebookicon4.png"
+                        alt="My FaceBook Page" class="icon"> </a>
+                <a href="https://www.instagram.com/leungkingcheung/"><img src="image/igIcon.png" alt="My Instagram Page"
+                        class="icon"> </a>
+                <a href="https://github.com/VictorLeung91/victor.github.io"><img src="image/githubicon.png"
+                        alt="My Github Page" class="icon"> </a>
+                <a href="https://www.linkedin.com/in/victor-leung-717920329/"><img src="image/linkinicon.png"
+                        alt="My LinkIn Page" class="icon"> </a>
+            </div>
+
+            <!--for top bar-->
+            <div class="mobile-nav" id="mobile-menu-btn">
+                <label for="toggle">&#9776;</label>
+                <input type="checkbox" id="toggle" />
+            </div>
+            <div id="close">
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+
+
+        <!--main content-->
+        <div class="content">
+
+            <!--Home page section-->
+            <div class="homePage page-content" id="homePage">
+                <div id="introduce-myself"></div>
+                <!--Js animation-->
+            </div>
+
+            <!--Html page section-->
+            <div class="htmlPage page-content" id="htmlPage">
+                <h1>HTML Cheat Sheet</h1>
+
+                <!--Cheat sheet table-->
+                <div class="table-container">
+                    <table class="cheatsheetTable">
+                        <thead>
+                            <tr>
+                                <th>Tag</th>
+                                <th>Example</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>&lt;h1&gt; to &lt;h6&gt;</td>
+                                <td>&lt;h1&gt;Heading&lt;/h1&gt;</td>
+                                <td>Defines headings, <code>h1</code> being the most important.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;p&gt;</td>
+                                <td>&lt;p&gt;This is a paragraph.&lt;/p&gt;</td>
+                                <td>Defines a paragraph.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;a&gt;</td>
+                                <td>&lt;a href="https://example.com"&gt;Visit&lt;/a&gt;</td>
+                                <td>Defines a hyperlink.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;img&gt;</td>
+                                <td>&lt;img src="image.jpg" alt="Example"&gt;</td>
+                                <td>Embeds an image in the document.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;ul&gt; and &lt;li&gt;</td>
+                                <td>
+                                    &lt;ul&gt;<br>
+                                    &nbsp;&nbsp;&lt;li&gt;Item 1&lt;/li&gt;<br>
+                                    &nbsp;&nbsp;&lt;li&gt;Item 2&lt;/li&gt;<br>
+                                    &lt;/ul&gt;
+                                </td>
+                                <td>Creates an unordered list.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;ol&gt; and &lt;li&gt;</td>
+                                <td>
+                                    &lt;ol&gt;<br>
+                                    &nbsp;&nbsp;&lt;li&gt;Step 1&lt;/li&gt;<br>
+                                    &nbsp;&nbsp;&lt;li&gt;Step 2&lt;/li&gt;<br>
+                                    &lt;/ol&gt;
+                                </td>
+                                <td>Creates an ordered list.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;div&gt;</td>
+                                <td>&lt;div&gt;Container&lt;/div&gt;</td>
+                                <td>Defines a block-level container for content.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;span&gt;</td>
+                                <td>&lt;span&gt;Inline text&lt;/span&gt;</td>
+                                <td>Defines an inline container for text.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;strong&gt;</td>
+                                <td>&lt;strong&gt;Important&lt;/strong&gt;</td>
+                                <td>Indicates strong importance.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;em&gt;</td>
+                                <td>&lt;em&gt;Emphasized text&lt;/em&gt;</td>
+                                <td>Indicates emphasis.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;table&gt;, &lt;tr&gt;, &lt;td&gt;</td>
+                                <td>
+                                    &lt;table&gt;<br>
+                                    &nbsp;&nbsp;&lt;tr&gt;&lt;td&gt;Data&lt;/td&gt;&lt;/tr&gt;<br>
+                                    &lt;/table&gt;
+                                </td>
+                                <td>Creates tables with rows and cells.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;br&gt;</td>
+                                <td>Line 1&lt;br&gt;Line 2</td>
+                                <td>Inserts a line break.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;hr&gt;</td>
+                                <td>&lt;hr&gt;</td>
+                                <td>Inserts a horizontal rule.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;form&gt;, &lt;input&gt;</td>
+                                <td>
+                                    &lt;form&gt;<br>
+                                    &nbsp;&nbsp;&lt;input type="text"&gt;<br>
+                                    &lt;/form&gt;
+                                </td>
+                                <td>Collects user inputs.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;button&gt;</td>
+                                <td>&lt;button&gt;Click me&lt;/button&gt;</td>
+                                <td>Defines a clickable button.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;label&gt;</td>
+                                <td>&lt;label for="name"&gt;Name:&lt;/label&gt;</td>
+                                <td>Defines a label for input fields.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;textarea&gt;</td>
+                                <td>&lt;textarea rows="4" cols="50"&gt;Type here&lt;/textarea&gt;</td>
+                                <td>Defines a multi-line text input.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;select&gt; and &lt;option&gt;</td>
+                                <td>
+                                    &lt;select&gt;<br>
+                                    &nbsp;&nbsp;&lt;option&gt;Option 1&lt;/option&gt;<br>
+                                    &nbsp;&nbsp;&lt;option&gt;Option 2&lt;/option&gt;<br>
+                                    &lt;/select&gt;
+                                </td>
+                                <td>Creates a dropdown menu.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!--Generator section-->
+                <div class="tool-container">
+
+                    <!-- Link Generator -->
+                    <div class="tool">
+                        <h2>Link Generator</h2>
+                        <label for="url">URL:</label>
+                        <input type="text" id="url" placeholder="https://example.com">
+
+                        <label for="text">Text:</label>
+                        <input type="text" id="text" placeholder="Link text">
+
+                        <label for="title">Title:</label>
+                        <input type="text" id="title" placeholder="Link title">
+
+                        <button onclick="generateLink()">Generate Link</button>
+                        <div id="link-output" class="output-container">
+                            <button class="copy-btn" onclick="copyToClipboard('link-output')">Copy</button>
+                            <pre id="link-output-text"></pre>
+                        </div>
+                    </div>
+
+                    <!-- Table Generator -->
+                    <div class="tool">
+                        <h2>HTML Table Generator</h2>
+                        <label for="rows">Number of Rows (&lt;tr&gt;):</label>
+                        <input type="number" id="rows" min="1" placeholder="Enter number of rows">
+
+                        <label for="headers">Number of Headers (&lt;th&gt; per row):</label>
+                        <input type="number" id="headers" min="0" placeholder="Enter number of headers">
+
+                        <label for="cells">Number of Cells (&lt;td&gt; per row):</label>
+                        <input type="number" id="cells" min="0" placeholder="Enter number of cells">
+
+                        <button onclick="generateTable()">Generate Table</button>
+                        <div id="table-output" class="output-container">
+                            <button class="copy-btn" onclick="copyToClipboard('table-output')">Copy</button>
+                            <pre id="table-output-text"></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--CSS page section-->
+            <div class="cssPage page-content" id="cssPage">
+                <h1>CSS Cheat Sheet</h1>
+
+                <!--Cheat sheet table-->
+                <div class="table-container">
+                    <table class="cheatsheetTable">
+                        <thead>
+                            <tr>
+                                <th>Property</th>
+                                <th>Example</th>
+                                <th>Definition</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>color</td>
+                                <td>h1 { color: red; }</td>
+                                <td>Sets the color of text.</td>
+                            </tr>
+                            <tr>
+                                <td>background-color</td>
+                                <td>div { background-color: lightblue; }</td>
+                                <td>Sets the background color of an element.</td>
+                            </tr>
+                            <tr>
+                                <td>margin</td>
+                                <td>p { margin: 20px; }</td>
+                                <td>Defines the space outside the border of an element.</td>
+                            </tr>
+                            <tr>
+                                <td>padding</td>
+                                <td>div { padding: 10px; }</td>
+                                <td>Defines the space inside the border, around the content of an element.</td>
+                            </tr>
+                            <tr>
+                                <td>border</td>
+                                <td>div { border: 2px solid black; }</td>
+                                <td>Specifies the style, width, and color of an element's border.</td>
+                            </tr>
+                            <tr>
+                                <td>font-size</td>
+                                <td>p { font-size: 16px; }</td>
+                                <td>Sets the size of text.</td>
+                            </tr>
+                            <tr>
+                                <td>text-align</td>
+                                <td>h1 { text-align: center; }</td>
+                                <td>Specifies the horizontal alignment of text.</td>
+                            </tr>
+                            <tr>
+                                <td>display</td>
+                                <td>div { display: flex; }</td>
+                                <td>Specifies the display behavior of an element (e.g., block, inline, flex).</td>
+                            </tr>
+                            <tr>
+                                <td>position</td>
+                                <td>div { position: absolute; top: 50px; left: 100px; }</td>
+                                <td>Specifies the positioning method for an element (static, relative, absolute, or
+                                    fixed).
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>box-shadow</td>
+                                <td>div { box-shadow: 2px 2px 5px grey; }</td>
+                                <td>Applies shadow effects to an element's box.</td>
+                            </tr>
+                            <tr>
+                                <td>width</td>
+                                <td>div { width: 200px; }</td>
+                                <td>Defines the width of an element.</td>
+                            </tr>
+                            <tr>
+                                <td>height</td>
+                                <td>div { height: 150px; }</td>
+                                <td>Defines the height of an element.</td>
+                            </tr>
+                            <tr>
+                                <td>float</td>
+                                <td>img { float: left; }</td>
+                                <td>Specifies how an element should float (left, right, or none).</td>
+                            </tr>
+                            <tr>
+                                <td>clear</td>
+                                <td>div { clear: both; }</td>
+                                <td>Specifies what elements can float beside the cleared element.</td>
+                            </tr>
+                            <tr>
+                                <td>overflow</td>
+                                <td>div { overflow: scroll; }</td>
+                                <td>Specifies what to do with content that exceeds the element's box.</td>
+                            </tr>
+                            <tr>
+                                <td>Flex-box Generator</td>
+                                <td><a href="https://www.cssportal.com/css-flexbox-generator/">
+                                        https://www.cssportal.com/css-flexbox-generator/</a></td>
+                                <td>A website to try flex-box by yourself.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!--Image Section-->
+                <div class="cssImage-container">
+                    <div class="cssImage">
+                        <a href="https://example.com" target="_blank">
+                        <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/0*YeaUsQyhXSL1TCTH.png"
+                            alt="Flex-Box picture" title="flex-box">
+                        </a>
+                        <a href="https://medium.com/@MakeComputerScienceGreatAgain/understanding-flexbox-a-comprehensive-guide-992bcd5f04de"
+                            title="Medium.com">Source</a>
+                    </div>
+                    <div class="cssImage">
+                        <img src="https://media.gcflearnfree.org/content/5f29bcb11ba79538b8778127_08_04_2020/borders.png"
+                            alt="Boarder picture" title="Boarder">
+                        <a href="https://edu.gcfglobal.org/en/basic-css/borders-in-css/1/"
+                            title="edu.gcfglobal.org">Source</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--JavaScritp section-->
+            <div class="jsPage page-content" id="jsPage">
+                <h1>JavaScript Cheat Sheet</h1>
+
+                <!--Cheat sheet table-->
+                <div class="table-container">
+                    <table class="cheatsheetTable">
+                        <thead>
+                            <tr>
+                                <th>Feature</th>
+                                <th>Details</th>
+                                <th>Definition</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Variables</td>
+                                <td>
+                                    const name = "John";<br>
+                                    let age = 25;
+                                </td>
+                                <td>Variables are containers for storing data values. const is used for values that
+                                    should
+                                    not change, and let is used for variables that may change.</td>
+                            </tr>
+                            <tr>
+                                <td>Data Types</td>
+                                <td>
+                                    Primitive: string, number, boolean, null, undefined<br>
+                                    Objects: {}, []
+                                </td>
+                                <td>JavaScript data types define the type of data that a variable can hold, such as
+                                    strings,
+                                    numbers, and objects.</td>
+                            </tr>
+                            <tr>
+                                <td>Functions</td>
+                                <td>
+                                    function greet(name) {<br>
+                                    &nbsp;&nbsp;return Hello, ${name};<br>
+                                    }<br><br>
+                                    const greet = (name) => Hello, ${name};
+                                </td>
+                                <td>Functions are blocks of code designed to perform a particular task and can be
+                                    executed
+                                    when called or invoked.</td>
+                            </tr>
+                            <tr>
+                                <td>DOM Manipulation</td>
+                                <td>
+                                    document.getElementById("id");<br>
+                                    document.querySelector(".className");<br>
+                                    document.getElementById("id").innerHTML = "New Content";
+                                </td>
+                                <td>DOM Manipulation refers to accessing and modifying the content, structure, and style
+                                    of
+                                    HTML elements using JavaScript.</td>
+                            </tr>
+                            <tr>
+                                <td>Events</td>
+                                <td>
+                                    document.getElementById("button").addEventListener("click", function() {<br>
+                                    &nbsp;&nbsp;alert("Button clicked!");<br>
+                                    });
+                                </td>
+                                <td>Events are actions that occur in the browser, such as clicks or key presses, which
+                                    can
+                                    trigger JavaScript code to run.</td>
+                            </tr>
+                            <tr>
+                                <td>Loops</td>
+                                <td>
+                                    for (let i = 0; i < 5; i++) {<br>
+                                        &nbsp;&nbsp;console.log(i);<br>
+                                        }<br><br>
+                                        let i = 0;<br>
+                                        while (i < 5) {<br>
+                                            &nbsp;&nbsp;console.log(i);<br>
+                                            &nbsp;&nbsp;i++;<br>
+                                            }
+                                </td>
+                                <td>Loops are used to execute a block of code multiple times, with conditions
+                                    controlling
+                                    the number of iterations.</td>
+                            </tr>
+                            <tr>
+                                <td>Arrays</td>
+                                <td>
+                                    const fruits = ["apple", "banana", "cherry"];<br>
+                                    fruits.push("orange");<br>
+                                    fruits.pop();
+                                </td>
+                                <td>Arrays are data structures used to store multiple values in a single variable,
+                                    accessible by index.</td>
+                            </tr>
+                            <tr>
+                                <td>Objects</td>
+                                <td>
+                                    const car = {<br>
+                                    &nbsp;&nbsp;brand: "Toyota",<br>
+                                    &nbsp;&nbsp;model: "Corolla",<br>
+                                    &nbsp;&nbsp;start() {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;console.log("Car started");<br>
+                                    &nbsp;&nbsp;}<br>
+                                    };<br>
+                                    console.log(car.brand);
+                                </td>
+                                <td>Objects are collections of related data and functions organized into key-value
+                                    pairs,
+                                    often representing real-world entities.</td>
+                            </tr>
+                            <tr>
+                                <td>JSON</td>
+                                <td>
+                                    const json = '{"name":"John", "age":30}';<br>
+                                    const obj = JSON.parse(json);<br>
+                                    const backToJson = JSON.stringify(obj);
+                                </td>
+                                <td>JSON is a lightweight data-interchange format used for transmitting data between a
+                                    server and a web application.</td>
+                            </tr>
+                            <tr>
+                                <td>Fetch API</td>
+                                <td>
+                                    fetch("https://api.example.com")<br>
+                                    &nbsp;.then(response => response.json())<br>
+                                    &nbsp;.then(data => console.log(data));
+                                </td>
+                                <td>The Fetch API provides a modern way to make HTTP requests to servers and process the
+                                    response.</td>
+                            </tr>
+                            <tr>
+                                <td>Classes</td>
+                                <td>
+                                    class Car {<br>
+                                    &nbsp;&nbsp;constructor(brand) {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;this.brand = brand;<br>
+                                    &nbsp;&nbsp;}<br>
+                                    &nbsp;&nbsp;start() {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;console.log(${this.brand} started);<br>
+                                    &nbsp;&nbsp;}<br>
+                                    }<br>
+                                    const myCar = new Car("Toyota");<br>
+                                    myCar.start();
+                                </td>
+                                <td>Classes are templates for creating objects, providing a blueprint for properties and
+                                    methods.</td>
+                            </tr>
+                            <tr>
+                                <td>Promises</td>
+                                <td>
+                                    const promise = new Promise((resolve, reject) => {<br>
+                                    &nbsp;&nbsp;if (true) resolve("Success");<br>
+                                    &nbsp;&nbsp;else reject("Failure");<br>
+                                    });<br>
+                                    promise.then(result => console.log(result));
+                                </td>
+                                <td>Promises represent the eventual completion (or failure) of an asynchronous operation
+                                    and
+                                    its resulting value.</td>
+                            </tr>
+                            <tr>
+                                <td>Template Literals</td>
+                                <td>
+                                    const name = "John";<br>
+                                    const greeting = Hello, ${name}!;
+                                </td>
+                                <td>Template literals allow embedded expressions and multi-line strings using backticks
+                                    ().
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>SetTimeout</td>
+                                <td>
+                                    setTimeout(() => {<br>
+                                    &nbsp;&nbsp;console.log("This will run after 2 seconds");<br>
+                                    }, 2000);
+                                </td>
+                                <td>setTimeout delays the execution of a function by a specified number of milliseconds.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Local Storage</td>
+                                <td>
+                                    localStorage.setItem("name", "John");<br>
+                                    const name = localStorage.getItem("name");
+                                </td>
+                                <td>Local Storage is a way to store data in the browser with no expiration.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <!--Image section-->
+                <div class="jsImage-container">
+                    <div class="jsImage">
+                        <img src="https://pbs.twimg.com/media/F1JMuvIWwAA6bIj?format=jpg&name=900x900"
+                            alt="Array Methods Visualised" title="Array">
+                        <a href="https://x.com/davidm_ml/status/1680489987396059138" title="X.com">Source</a>
+                    </div>
+                    <div class="jsImage">
+                        <img src="https://shipstationmarketplace.com/cdn/shop/files/rubber-duck-debugging-sticker_7ee35fbd-ce1f-49b0-a7c8-a5743c947011.png?v=1720063149&width=1400"
+                            alt="Debug duck" title="Debug Duck">
+                        <a href="https://shipstationmarketplace.com/products/rubber-duck-debugging-laptop-sticker?variant=41860605018182"
+                            title="ShipStationmarketplace.com">Source</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--Resume section-->
+            <div class="resumePage page-content" id="resumePage">
+                <h1>Resume</h1>
+
+                <!--Intorduce myself section-->
+                <div class="introInfo-container">
+                    <div class="introduce-myself2">
+
+                        <h2>What I have learnt</h2>
+                        <p id="learnTitle">
+                            Hi, my name is King Cheung Leung (Victor).<br><br>
+                            I’m a first-year Software Development student at Bow Valley College, originally from Hong
+                            Kong.<br>
+                            This page showcases the skills I’ve learned during my studies so far.<br>
+                            It will continue to be updated as I grow and develop my expertise.<br>
+                        </p>
+                    </div>
+
+                    <!--Contact me section-->
+                    <div class="contact-info">
+                        <h2>Personal Infomation</h2>
+                        <table class="infoTable">
+                            <tr>
+                                <td><b>Name:</b></td>
+                                <td>King Cheung Leung (Victor)</td>
+                            </tr>
+                            <tr>
+                                <td><b>Email:</b></td>
+                                <td>victorleung91@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td><b>Age:</b></td>
+                                <td id="age">Calculating...</td><!--Calculate by JS-->
+                            </tr>
+                            <tr>
+                                <td><b>From:</b></td>
+                                <td>Hong Kong</td>
+                            </tr>
+                        </table>
+
+                    </div>
+                </div>
+
+                <!--Skills section-->
+                <div class="skills-container">
+                    <!-- Skill Item 1 JavaScript-->
+                    <div class="skill-item">
+                        <img src="image/javascript-logo.png" alt="JS logo" title="html logo" class="skill-icon">
+                        <h3>JavaScript</h3>
+                        <p><b>Final Grade:</b> <strong> Will be update soon!</strong></p>
+
+                    </div>
+                    <!-- Skill Item 2 HTML-->
+                    <div class="skill-item">
+                        <img src="image/html-logo.png" alt="html logo" title="html logo" class="skill-icon">
+                        <h3>H T M L</h3>
+                        <p><b>Final Grade:</b> <strong> Will be update soon!</strong></p>
+                    </div>
+                    <!-- Skill Item 3 -->
+                    <div class="skill-item">
+                        <img src="image/C++-logo.png" alt="C++ logo" title="C++ logo" class="skill-icon">
+                        <h3>C + +</h3>
+                        <p><b>Final Grade:</b> <strong> Will be update soon!</strong></p>
+                    </div>
+                    <!-- Skill Item 4 -->
+                    <div class="skill-item">
+                        <img src="image/Arduino_IDE_logo.png" alt="Arduino_IDE_logo" title="Arduino_IDE_logo"
+                            class="skill-icon">
+                        <h3>Andunio IDE</h3>
+                        <p><b>Final Grade:</b> <strong> Will be update soon!</strong></p>
+                    </div>
+                    <!-- Skill Item 5 -->
+                    <div class="skill-item">
+                        <img src="image/CSS-Logo.png" alt="CSS logo" title="CSS logo" class="skill-icon">
+                        <h3>C S S</h3>
+                        <p><b>Final Grade:</b> <strong> Will be update soon!</strong></p>
+                    </div>
+                    <!-- Skill Item 6 -->
+                    <div class="skill-item">
+                        <img src="image/Essential-Skills-for-Teams-Collaboration.jpg"
+                            alt="Essential-Skills-for-Teams-Collaboration logo"
+                            title="Essential-Skills-for-Teams-Collaboration logo" class="skill-icon">
+                        <h3>Essential Skills for Teams Collaboration</h3>
+                        <p><b>Final Grade:</b> <strong> Will be update soon!</strong></p>
+                    </div>
+                    <!-- Skill Item 7 -->
+                    <div class="skill-item">
+                        <img src="image/math-logo.png" alt="Math logo" title="Math logo" class="skill-icon">
+                        <h3>Math for the Computer Industry</h3>
+                        <p><b>Final Grade:</b> <strong>A +</strong></p>
+                    </div>
+                </div>
+
+                <!--Email form section-->
+                <div class="resume-container">
+                    <h1>Get in Touch</h1>
+
+                    <!--Contact form-->
+                    <div class="contact-form">
+                        <h3>Send me an Email</h3>
+                        <form action="#" method="POST">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="I am looking forward your message!" required></textarea>
+
+                            <button type="submit">Send Message</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
